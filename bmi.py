@@ -1,7 +1,14 @@
+import sys
+
 # User need to input these 3 parameteres
 height = float(input("Enter height in meters: "))
 # weight = float(input("Enter weight in kg: "))
 bmi = float(input("Enter BMI score: "))
+
+if height <= 0 or bmi <= 0:
+   print("the input value need to be higher than 0 and positive number"
+   sys.exit()
+
 
 # the formula to calculate bmi value
 # bmi = weight/(height**2) 
